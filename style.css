@@ -1,0 +1,63 @@
+*{margin: 0;padding: 0;}
+body{
+    height: 100vh;/*垂直居中的方法再学习下让其高度直接等于其唯一子元素的高度*/
+    
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background:grey url(./2.jpeg) ;    /*完全忘记了*/
+    background-size: cover;    /*记了3次了，还是忘记了*/
+}
+.wrapper{   
+    background:rgba(255,255,255,0.3); 
+    padding: 25px 37px 35px 30px;   
+    border-radius: 4px;
+}
+.keybord{
+    display: flex;  /*老师直接调每行的按键*/
+    justify-content: center;
+    align-items: center;
+    flex-flow:wrap; 
+    margin-top:16px;
+
+}
+kbd{
+    text-transform: uppercase;/*将小写字母
+    变为大写字母，自己忘记了该条语法，要记*/
+    position:relative;
+    margin-left: 10px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+kbd.keybd {
+    text-align: center;
+    width: 50px;
+    height: 40px;
+    color: #c5c5c5;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #111111 0%, #292929 100%);
+    border-radius: 8px;
+    box-shadow: 0px 0px 0px 1px #1a1b1c,0px 0px 0px 2px #1f2020,0px 3px 0px 1px #1a1b1c;
+			}
+kbd > button{
+    position: absolute;
+    bottom:3px;
+    right: 5px;
+    display: none;
+}
+kbd:hover>button{
+/*忘记了*/
+    display:inline-block;
+}
+kbd>img{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    bottom: 3px;
+    left: 6px
+}
